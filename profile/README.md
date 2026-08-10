@@ -19,9 +19,10 @@ build required to use any of them.
 |Go|[arbo-ocr-go](https://github.com/ARBO-TEAM/arbo-ocr-go)|![GitHub Repo stars](https://img.shields.io/github/stars/ARBO-TEAM/arbo-ocr-go?style=flat-square)|Simplest Go OCR, with sub process cpp.|
 |Rust|[arbo-ocr-rust](https://github.com/ARBO-TEAM/arbo-ocr-rust)|![GitHub Repo stars](https://img.shields.io/github/stars/ARBO-TEAM/arbo-ocr-rust?style=flat-square)|Simplest Rust OCR, with sub process cpp.|
 |Python|[arbo-ocr-python](https://github.com/ARBO-TEAM/arbo-ocr-python)|![GitHub Repo stars](https://img.shields.io/github/stars/ARBO-TEAM/arbo-ocr-python?style=flat-square)|Python wrapper for arboOCR — runs the prebuilt `arboocr_demo` binary via subprocess, no C++ build required.|
+|JS|[arbo-ocr-js](https://github.com/ARBO-TEAM/arbo-ocr-js)|![GitHub Repo stars](https://img.shields.io/github/stars/ARBO-TEAM/arbo-ocr-js?style=flat-square)|Node.js and Bun wrapper for arboOCR — zero runtime dependencies, no native module, no `node-gyp`.|
 
 Every wrapper spawns the same `arboocr_demo` release binary per call and
-parses its `--json` output — so accuracy is identical across all four;
+parses its `--json` output — so accuracy is identical across all five;
 what differs is each language's own process-spawn/interpreter overhead.
 Benchmarked head-to-head against each other and against RapidOCR /
 RapidOcrOnnx on a 40-image SROIE sample; Go and Rust add the least
